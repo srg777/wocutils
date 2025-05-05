@@ -28,7 +28,7 @@ const {
   jwtToken,
   cookieToken,
   web3messages
-} = require('@woc/common');
+} = require('wocutils');
 
 
 
