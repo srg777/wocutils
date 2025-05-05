@@ -27,8 +27,7 @@ const {
   checker,
   jwtToken,
   cookieToken,
-  web3messages,
-  db
+  web3messages
 } = require('@woc/common');
 
 
@@ -93,14 +92,6 @@ web3messages
 const message = web3messages.getLoginMessage(address);
 const isValid = web3messages.verifyLoginSignature(address, message, signature);
 
-db (будет добавлен)
-
-Унифицированная функция executeQuery.
-
-await db.executeQuery(pool, 'SELECT * FROM missions WHERE id = $1', [id]);
-
-
-
 ⸻
 
 📁 Структура
@@ -114,8 +105,6 @@ woc-common/
 ├── result.js
 ├── validate.js
 ├── web3messages.js
-├── db/
-│   └── query.js (планируется)
 └── index.js
 
 
@@ -131,7 +120,6 @@ woc-common/
 ⸻
 
 🧪 TODO / Roadmap
-	•	Добавить db/query.js
 	•	Добавить тесты (jest)
 	•	Добавить utils.js (sleep, retry, traceId и др.)
 	•	Автоматическая документация (через JSDoc или typedoc)
