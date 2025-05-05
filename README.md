@@ -7,7 +7,7 @@ woc-common
 
 📦 Установка
 
-npm install git+ssh://git@github.com:woc-project/woc-common.git
+npm install git+ssh://git@github.com:woc-project/wocutils.git
 
 package.json:
 "dependencies": {
