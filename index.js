@@ -8,4 +8,5 @@ module.exports = {
     validate: require('./validate'),
     web3messages: require('./web3messages'),
     http: require('./http'),
+    chance: require('./chance'),
   };
